@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Капучино",
         "description": "Эспрессо с равными частями молока и молочной пены.",
-        "price": 170,
+        "price": 30,
         "image": "https://st.depositphotos.com/2363887/2571/i/450/depositphotos_25717699-stock-photo-cappuccino-mug-close-up-with.jpg",
         "category": "Молочный",
         "sizes": [150, 250]
@@ -12,7 +12,7 @@
         "id": 2,
         "name": "Мокачино",
         "description": "Капучино с добавлением шоколадного сиропа.",
-        "price": 200,
+        "price": 35,
         "image": "https://st.depositphotos.com/1000184/4955/i/450/depositphotos_49553123-stock-photo-coffee-mocha.jpg",
         "category": "Шоколадный",
         "sizes": [200, 300]
@@ -21,7 +21,7 @@
         "id": 3,
         "name": "Раф-кофе",
         "description": "Эспрессо с взбитыми сливками, сахаром и ванилью.",
-        "price": 220,
+        "price": 45,
         "image": "https://st.depositphotos.com/24643676/53762/i/950/depositphotos_537622278-stock-photo-cappuccino-coffee-lavender-syrup-glass.jpg",
         "category": "Десертный",
         "sizes": [200, 300]
@@ -30,7 +30,7 @@
         "id": 7,
         "name": "Карамельный Латте",
         "description": "Мягкий латте с карамельным сиропом и взбитыми сливками.",
-        "price": 70,
+        "price": 36,
         "image": "https://st5.depositphotos.com/78064378/70423/i/380/depositphotos_704238822-stock-photo-coffee-einstein-cold-buru-latte.jpg",
         "sizes": [250, 350, 450]
     },
@@ -38,7 +38,7 @@
         "id": 8,
         "name": "Кофе Гляссе",
         "description": "Холодный эспрессо с шариком ванильного мороженого.",
-        "price": 75,
+        "price": 50,
         "image": "https://st3.depositphotos.com/22341038/36854/i/380/depositphotos_368542664-stock-photo-iced-coffee-poured-cream-isolated.jpg",
         "sizes": [200, 300]
     },
@@ -46,7 +46,7 @@
         "id": 9,
         "name": "Айриш Кофе",
         "description": "Крепкий кофе с ирландским виски, сахаром и сливками.",
-        "price": 90,
+        "price": 70,
         "image": "https://st3.depositphotos.com/13349494/18499/i/380/depositphotos_184994372-stock-photo-pouring-milk-cup-coffee-isolated.jpg",
         "sizes": [200, 300]
     }
