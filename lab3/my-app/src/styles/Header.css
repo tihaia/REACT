@@ -1,0 +1,39 @@
+/* Основной стиль шапки */
+.header {
+    background: #f5ebe0;
+    color: #6d4c41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Заголовок */
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+  }
+  
+  /* Навигация */
+  .nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  /* Ссылки */
+  .link {
+    color: #8d6e63;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .link:hover {
+    color: #5d4037;
+  }
+  
+
+  
