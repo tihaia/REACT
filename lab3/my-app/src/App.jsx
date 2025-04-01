@@ -8,12 +8,12 @@ import CoffeeList from './components/CoffeeList'
 import Slider from './components/Slider'
 
 function App() {
-
+  const [searchQuery, setSearchQuery] = useState("");
   return (
     <>
-    <Header />
+    <Header onSearch={setSearchQuery} />
     <Slider />
-    <CoffeeList />
+    <CoffeeList searchQuery={searchQuery} />
     <Footer />
     </>
   )
