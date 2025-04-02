@@ -1,17 +1,20 @@
+/* Подключение утилитарных стилей */
 @import '../../styles/utils';
 
+/* Стили для шапки страницы */
 .header {
-    display: flex;
-    color: $primary-color;
-    padding: 0.5rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    border: 1px solid $primary-color;
-    font-family: 'Space Grotesk', sans-serif;
-  }
+  display: flex;
+  color: $primary-color;
+  padding: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 1px solid $primary-color;
+  font-family: 'Space Grotesk', sans-serif;
+}
 
+/* Стили для заголовков */
 .title {
-    margin: 0;
-    font-size: 1.9rem;
-  }
+  margin: 0;
+  font-size: 1.9rem;
+}
