@@ -1,8 +1,28 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Версия проекта с использованием CSS-фреймворка Tailwind CSS
+## Использованный метод
+В данной версии стилизация выполняется с помощью Tailwind CSS — утилитарного CSS-фреймворка, который позволяет писать стили непосредственно в className.
+## Основные особенности
+* Утилитарный подход — вместо написания отдельных CSS-файлов используются готовые классы (flex, text-center, p-4 и т. д.).
+* Минимизация кастомного CSS — стили пишутся прямо в JSX-разметке.
+* Гибкость — можно легко изменять стили без необходимости обновлять CSS-файлы.
+* Оптимизация — Tailwind автоматически удаляет неиспользуемые стили при продакшен-сборке.
+## Инструкции по запуску проекта
+1. Установите Tailwind CSS:
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
+2. Устанавливаю зависимости:
+```bash
+npm install
+```
+3. Запускаю проект:
+```bash
+npm run dev
+```
+## Сценарии использования данного метода стилизации
+Метод стилизации через Tailwind CSS подходит в следующих случаях:
+* Когда нужно быстро разрабатывать интерфейс без написания кастомного CSS.
+* Если команда хочет использовать готовые классы без необходимости придумывать имена классов.
+* В случае, когда глобальные стили нежелательны, и удобнее задавать всё через className.
+* Когда важна оптимизация продакшен-сборки — Tailwind автоматически удаляет неиспользуемые стили.
+* В больших проектах, где важно обеспечить единообразие стилей без сложных CSS-структур.
