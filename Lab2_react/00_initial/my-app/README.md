@@ -1,8 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Исходная версия проекта без стилизации
+В этом экземпляре проекта я создаю каркас и структура проекта и в дальнейшем буду брать его за основу при использовании различных видов стилей.
+# Компоненты проекта
+1. Header — компонент для шапки сайта
+2. Footer — компонент для подвала сайта
+3. Article — компонент для отображения статьи или контента
+4. ArticleList — компонент для отображения списка статей
+5. App — основной компонент, который собирает остальные компоненты
