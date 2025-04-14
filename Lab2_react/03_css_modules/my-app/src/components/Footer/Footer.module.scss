@@ -1,10 +1,13 @@
+/* Подключение утилитарных стилей */
 @import '../../styles/utils';
 
+/* Стили для подвала страницы */
 .footer {
-    font-size: small;
-    font-family: 'Space Grotesk', sans-serif;
+  font-size: small;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
+/* Стили для подвала при наведении */
 .footer:hover {
-    color:rgb(153, 5, 0);
-  }
+  color: rgb(153, 5, 0);
+}

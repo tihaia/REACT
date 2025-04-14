@@ -1,8 +1,24 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Версия проекта с использованием библиотеки CSS-in-JS
+## Использованный метод
+В данной версии стилизация выполняется с помощью CSS-in-JS, используя библиотеку (например, styled-components или emotion). Этот метод позволяет писать стили прямо внутри компонентов, используя JavaScript.
+## Основные особенности
+* Динамические стили: можно использовать пропсы для изменения стилей.
+* Локальная область видимости: стили привязаны к конкретному компоненту.
+* Гибкость: можно использовать переменные, функции и условия в стилях.
+* Удаление неиспользуемых стилей: стили автоматически удаляются, если компонент не используется.
+## Инструкции по запуску проекта
+1. Устанавливаю зависимости:
+```bash
+npm install
+npm install styled-components
+```
+2. Запускаю проект:
+```bash
+npm run dev
+```
+## Сценарии использования данного метода стилизации
+* Когда требуется динамическая стилизация в зависимости от пропсов (props).
+* Когда важно инкапсулировать стили внутри компонентов, избегая глобального воздействия.
+* Если проект использует TypeScript, так как styled-components и emotion поддерживают типизацию.
+* Когда нужно удалять неиспользуемые стили автоматически без риска накопления старых классов.
+* В случаях, когда удобно писать стили и логику в одном файле, без разделения на CSS-файлы.

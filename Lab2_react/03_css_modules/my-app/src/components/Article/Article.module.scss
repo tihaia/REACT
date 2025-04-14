@@ -1,9 +1,12 @@
+/* Подключение утилитарных стилей */
 @import '../../styles/utils';
 
+/* Стили для блока статьи */
 .article {
-    font-family: 'Times New Roman', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
 }
 
+/* Стили для заголовка статьи */
 .title {
-    color: rgb(94, 11, 0);
-  }    
+  color: rgb(94, 11, 0);
+}

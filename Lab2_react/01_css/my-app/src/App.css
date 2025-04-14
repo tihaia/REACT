@@ -1,3 +1,4 @@
+/* Основной контейнер страницы */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,6 +6,7 @@
   text-align: center;
 }
 
+/* Заголовок страницы */
 .header {
   display: flex;
   color: rgb(175, 5, 5);
@@ -16,11 +18,13 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
+/* Заголовок внутри .header */
 .header__title {
   margin: 0;
   font-size: 1.9rem;
 }
 
+/* Стили для статьи */
 .article {
   font-family: 'Times New Roman', sans-serif;
 }
@@ -29,6 +33,7 @@
   color: rgb(94, 11, 0);
 }
 
+/* Подвал страницы */
 .footer {
   font-size: small;
   font-family: 'Space Grotesk', sans-serif;
