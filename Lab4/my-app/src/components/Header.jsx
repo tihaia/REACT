@@ -1,5 +1,6 @@
 import "../styles/Header.css";
 import Search from "./Search";
+import { Link } from "react-router-dom"; // ✅ Добавили Link
 
 /**
  * Компонент Header отображает шапку сайта с поиском и навигацией.
@@ -12,9 +13,9 @@ function Header({ onSearch }) {
     <header className="header">
       <h1 className="title">Tanya's Coffee</h1>
       <nav className="nav">
-        <a href="#" className="link">Главная</a>
-        <a href="#menu" className="link">Меню</a>
-        <a href="#contacts" className="link">Найти нас</a>
+        <Link to="/" className="link">Главная</Link>
+        <Link to="/cart" className="link">Корзина</Link>
+        <Link to="/about" className="link">Найти нас</Link>
         <Search onSearch={onSearch} />
       </nav>
     </header>

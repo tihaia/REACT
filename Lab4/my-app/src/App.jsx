@@ -1,22 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import CoffeeList from './components/CoffeeList'
-import Slider from './components/Slider'
 
+import { Routes, Route } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import CartPage from './pages/CartPage';
+import ProductPage from './pages/ProductPage';
+import NotFoundPage from './pages/NotFoundPage';
+
+/**
+ * Основной компонент приложения с маршрутизацией.
+ * @component
+ */
 function App() {
-  const [searchQuery, setSearchQuery] = useState("");
   return (
-    <>
-    <Header onSearch={setSearchQuery} />
-    <Slider />
-    <CoffeeList searchQuery={searchQuery} />
-    <Footer />
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="cart" element={<CartPage />} />
+        <Route path="product/:id" element={<ProductPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
