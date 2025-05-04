@@ -112,6 +112,9 @@
 2. Реализовала добавление товара в корзину из компонента `ProductCard`.
 
    1. Использовала `useDispatch` и `addToCart`
+   ```jsx
+      const dispatch = useDispatch();
+   ```
    2. Использовала существующую кнопку `"Добавить в корзину"`
    ```jsx
     addToCart(state, action) {
