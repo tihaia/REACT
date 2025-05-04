@@ -131,22 +131,23 @@
 3. Взяла существующую страницу `CartPage.jsx`, на которой:
    1. Выводится список товаров из `useSelector(state => state.cart.items)`
    2. Можно _увеличить/уменьшить количество_
-    ```jsx
+   ```jsx
      const increaseQuantity = (id, size) => {
     const item = cartItems.find((i) => i.id === id && i.size === size);
     if (item) {
       dispatch(updateQuantity({ id, size, quantity: item.quantity + 1 }));
     }
   };
-
-  const decreaseQuantity = (id, size) => {
+   ```
+   ```jsx
+     const decreaseQuantity = (id, size) => {
     const item = cartItems.find((i) => i.id === id && i.size === size);
     if (item && item.quantity > 1) {
       dispatch(updateQuantity({ id, size, quantity: item.quantity - 1 }));
     }
   };
-    ```
-   3. Можно _удалить товар_
+   ```
+4. Можно _удалить товар_
    ```jsx
     const handleRemove = (id, size) => {
         dispatch(removeFromCart({ id, size }));
