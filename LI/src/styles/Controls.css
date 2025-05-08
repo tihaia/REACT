@@ -1,0 +1,77 @@
+/* Контейнер для элементов управления */
+.controls {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Поле ввода для поиска */
+  .controls input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 200px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .controls input:focus {
+    outline: none;
+    border-color: #8d6e63; /* Изменение цвета при фокусе */
+  }
+  
+  /* Кнопки и селекты */
+  .controls select,
+  .controls button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f5ebe0;
+    color: #6d4c41;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* При наведении на кнопки и селекты */
+  .controls select:hover,
+  .controls button:hover {
+    background-color: #8d6e63;
+    color: white;
+    border-color: #8d6e63;
+  }
+  
+  /* Кнопка очистки фильтров */
+  .controls button {
+    background-color: #f5ebe0;
+    color: #6d4c41;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .controls button:hover {
+    background-color: #8d6e63;
+    color: white;
+  }
+  
+  .controls select {
+    background-color: #f5ebe0;
+    width: 200px;
+  }
+  
+  /* Респонсивность для маленьких экранов */
+  @media (max-width: 768px) {
+    .controls {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .controls input,
+    .controls select,
+    .controls button {
+      width: 100%;
+    }
+  }
+  
