@@ -25,75 +25,64 @@
 ))}
 ```
 
-###  Добавление нового телефона
+###  Просмотр списка коктейлей
+
+```js
+{filteredCocktails.map((cocktail) => (
+  <CocktailCard key={cocktail.id} cocktail={cocktail} />
+))}
+
+```
+
+###  Добавление нового коктейля
 
 ```js
 await axios.post(API_URL, payload);
 ```
 
-###  Редактирование и удаление существующего телефона
+### Редактирование и удаление коктейля
 
 ```js
 await axios.put(`${API_URL}/${id}`, payload); 
 await axios.delete(`${API_URL}/${id}`); 
 ```
 
-### ↕ Сортировка (по цене, по имени)
+###  Сортировка по цене
 
 ```js
-sorted.sort((a, b) => parseFloat(a.price) - parseFloat(b.price)); 
-sorted.sort((a, b) => a.name.localeCompare(b.name)); 
+sorted.sort((a, b) => a.price - b.price);
 ```
 
-###  Фильтрация по категориям (Флагман, Бюджетный, Складной)
+###  Фильтрация по категориям (Фруктовый, Безалкогольный, Десертный…)
 
 ```js
-const filtered = phones.filter((p) => p.category === selected);
+const filtered = cocktails.filter((c) => c.category === selectedCategory);
 ```
 
 ###  Поиск по названию и описанию
 
 ```js
-const filtered = phones.filter(
-  (phone) =>
-    phone.name.toLowerCase().includes(lower) ||
-    phone.description.toLowerCase().includes(lower)
+const filtered = cocktails.filter(
+  (c) =>
+    c.name.toLowerCase().includes(query.toLowerCase()) ||
+    c.description.toLowerCase().includes(query.toLowerCase())
 );
 ```
 
-###  Корзина с подсчетом общей суммы (Redux)
+###  Корзина с подсчётом суммы (Redux Toolkit)
 
 ```js
-const total = cart.reduce((sum, p) => sum + parseFloat(p.price), 0).toFixed(2);
+const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 ```
 
-###  Страница отзывов с формой добавления
-
-```js
-<form onSubmit={handleSubmit} className="review-form">...
-```
-
-###  Адаптивная сетка и приятный интерфейс
+###  Адаптивная сетка
 
 ```css
-.phone-list {
+.cocktail-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
 }
-```
-
----
-
-## ℹ️ Технологии
-
-* React 18
-* React Router DOM
-* Redux Toolkit
-* Axios
-* Lodash.debounce
-* MockAPI ([https://mockapi.io](https://mockapi.io))
-* CSS (ручная стилизация, без фреймворков)
-
 ---
 
 ##  Установка и запуск
@@ -118,19 +107,6 @@ npm run dev
 ```
 
 4. → Открыть в браузере: `http://localhost:5173`
-
----
-
-## 🌐 Примеры интерфейса
-
-* Главная страница:
-  ![alt text](image.png)
-* Форма добавления:
-  ![alt text](image-1.png)
-* Корзина:
- ![alt text](image-2.png)
-* Отзывы:
-![alt text](image-3.png)
 ---
 
 
@@ -143,6 +119,14 @@ npm run dev
 * [https://lodash.com/docs/4.17.15#debounce](https://lodash.com/docs/4.17.15#debounce)
 
 ---
+### Было использовано
+1. React 18 — библиотека для создания интерфейсов
+2. React Router DOM — маршрутизация между страницами (меню, карточка коктейля, форма и т.д.)
+3. Redux Toolkit — управление глобальным состоянием (корзина)
+4. Axios — HTTP-запросы к API
+5. Lodash.debounce — оптимизация поиска по названию
+6. MockAPI (https://mockapi.io) — онлайн-сервис для имитации backend-а
+7. CSS — ручная стилизация без фреймворков (адаптивные карточки, сетка, кнопки)
 
 ##  Дополнительно
 
