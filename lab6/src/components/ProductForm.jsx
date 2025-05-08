@@ -24,7 +24,7 @@ function ProductForm() {
 
   useEffect(() => {
     if (isEdit) {
-      axios.get(`https://6815f68a32debfe95dbcf4e4.mockapi.io/products/${id}`).then((res) => {
+      axios.get(`https://681d11a8f74d4de1d219aeb761.mockapi.io/products/${id}`).then((res) => {
         const data = res.data;
         setFormData({
           name: data.name,
@@ -65,9 +65,9 @@ function ProductForm() {
     };
 
     if (isEdit) {
-      await axios.put(`https://6815f68a32debfe95dbcf4e4.mockapi.io/products/${id}`, payload);
+      await axios.put(`https://681d11a8f74d4de1d219aeb761.mockapi.io/products/${id}`, payload);
     } else {
-      await axios.post("https://6815f68a32debfe95dbcf4e4.mockapi.io/products", payload);
+      await axios.post("https://681d11a8f74d4de1d219aeb761.mockapi.io/products", payload);
     }
 
     navigate("/");
