@@ -1,40 +1,68 @@
-/* Основной стиль шапки */
 .header {
-  background: #f5ebe0;
-  color: #6d4c41;
+  background: linear-gradient(90deg, #ffe8d6, #e0afa0);
+  color: #3e2723;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 100px;
+  padding: 12px 5vw;
   font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid #d7ccc8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 10px 10px;
+  transition: background 0.3s ease;
 }
 
 /* Заголовок */
 .title {
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
   font-family: "Playfair Display", serif;
+  color: #4e342e;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  transition: color 0.3s ease;
 }
 
+.title:hover {
+  color: #5d4037;
+}
+
+/* Навигация */
 /* Навигация */
 .nav {
   display: flex;
   gap: 25px;
+  align-items: center;
 }
 
 /* Ссылки */
 .link {
-  color: #8d6e63;
+  color: #795548;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  transition: color 0.3s ease-in-out;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-/* Эффект при наведении на ссылку */
+/* Эффект при наведении */
 .link:hover {
-  color: #5d4037;
+  background-color: #efebe9;
+  color: #3e2723;
 }
+
+/* Активная ссылка (если используешь React NavLink или добавляешь класс) */
+.link.active {
+  background-color: #d7ccc8;
+  color: #3e2723;
+  font-weight: 600;
+}
+
+
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
