@@ -1,37 +1,45 @@
 /* Стиль футера */
 .footer {
-  background-color: #6d4c41;
-  color: white;
-  padding: 15px 30px;
+  background: linear-gradient(90deg, #ffe8d6, #e0afa0);
+  color: #3e2723;
+  padding: 20px 5vw;
   text-align: center;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: "Poppins", sans-serif;
 }
 
 /* Текст в футере */
 .footer p {
   margin: 0;
+  opacity: 0.9;
 }
 
 /* Навигация в футере */
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 /* Ссылки в футере */
 .footer-link {
-  color: white;
+  color: #3e2723;
   text-decoration: none;
   font-size: 1rem;
-  transition: opacity 0.3s;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
 }
 
 .footer-link:hover {
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 /* Адаптивность для мобильных устройств */
