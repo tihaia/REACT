@@ -16,7 +16,7 @@ function CoffeeList({ searchQuery }) {
 
   useEffect(() => {
     axios
-      .get("https://6815f68a32debfe95dbcf4e4.mockapi.io/products")
+      .get("https://681d11a8f74d4de1d219aeb761.mockapi.io/products")
       .then((res) => {
         setCoffees(res.data);
         setLoading(false);
