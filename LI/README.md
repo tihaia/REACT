@@ -87,36 +87,40 @@ const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
 ##  Установка и запуск
 
-1. → Склонировать репозиторий
-
-```bash
-git clone https://github.com/your-username/phone-store-react.git
-cd my-phone-app
-```
-
-2. → Установить зависимости
+1. Установка зависимости
 
 ```bash
 npm install
 ```
+2. Установленные библиотеки
 
-3. → Запустить проект локально
+- react
+- react-dom
+- react-router-dom
+- redux
+- @reduxjs/toolkit
+- react-redux
+- axios
+- lodash.debounce
+
+3.  Запустить проект в режиме разработки
 
 ```bash
 npm run dev
 ```
 
-4. → Открыть в браузере: `http://localhost:5173`
+4. Открыть в браузере
+```bash
+http://localhost:5173
+```
 ---
 
 
-##  Источники и ресурсы
+##  Источники
 
 * [https://reactjs.org/](https://reactjs.org/)
 * [https://redux-toolkit.js.org/](https://redux-toolkit.js.org/)
-* [https://axios-http.com](https://axios-http.com)
 * [https://mockapi.io](https://mockapi.io)
-* [https://lodash.com/docs/4.17.15#debounce](https://lodash.com/docs/4.17.15#debounce)
 
 ---
 ### Было использовано
@@ -130,7 +134,8 @@ npm run dev
 
 ##  Дополнительно
 
-* Корзина реализована через Redux Toolkit с сохранением в localStorage
-* Все данные загружаются и синхронизируются с MockAPI
-* Приложение оптимизировано для настольных и мобильных устройств
-* Код снабжен JSDoc для лучшего понимания
+* Адаптивный дизайн — сайт удобно использовать на компьютере, планшете и смартфоне.
+* Сохранение корзины в localStorage — товары не пропадают при перезагрузке страницы.
+* Структура проекта разделена по компонентам и страницам для удобства поддержки.
+* Обработка ошибок при загрузке данных и отправке форм.
+* MockAPI используется как фейковый бэкенд с возможностью визуального редактирования данных.
