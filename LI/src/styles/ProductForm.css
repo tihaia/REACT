@@ -1,58 +1,76 @@
 .product-form {
-  max-width: 500px;
-  margin: 30px auto;
-  padding: 24px;
-  background-color: #fdfdfd;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 28px;
+  background-color: #fff8f1;
+  border: 1px solid #e0cfc0;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  font-family: Arial, sans-serif;
+  gap: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
 .product-form h2 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  font-size: 24px;
+  color: #4e342e;
+}
+
+.product-form label {
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #6d4c41;
 }
 
 .product-form input,
 .product-form textarea {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.product-form input:focus,
+.product-form textarea:focus {
+  outline: none;
+  border-color: #8d6e63;
+  box-shadow: 0 0 0 3px rgba(141, 110, 99, 0.2);
 }
 
 .product-form textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 120px;
 }
 
 /* Кнопка отправки формы */
 .product-form button {
-  padding: 12px;
+  padding: 14px;
   background-color: #8d6e63;
   color: white;
   font-size: 16px;
+  font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Эффект при наведении на кнопку */
 .product-form button:hover {
-  background-color: #be9789;
+  background-color: #5d4037;
+  transform: translateY(-2px);
 }
 
 /* Стили для ошибок */
 .product-form p {
-  color: red;
+  color: #c62828;
   font-size: 14px;
-  margin: -10px 0 0 0;
+  margin: -6px 0 0 0;
 }
+
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
