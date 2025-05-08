@@ -114,6 +114,17 @@ npm run dev
 http://localhost:5173
 ```
 ---
+## Визуал
+1. Главная страница 
+![image](https://github.com/user-attachments/assets/4be58d92-3a37-4d9b-9b4f-acffa9e0bfa8)
+2. Карточки товара
+![image](https://github.com/user-attachments/assets/126ae268-e7a6-428a-8958-44e948b94f6a)
+3. Корзина
+![image](https://github.com/user-attachments/assets/aea7c4c9-64cf-4e7a-a155-d6ba04324cc6)
+4. Форма добавления
+![image](https://github.com/user-attachments/assets/c3ec14cc-19fe-4cc2-b761-8e3bdd9e3ca5)
+5. Адаптивность под меньшие форматы 
+![image](https://github.com/user-attachments/assets/a716da67-bbd2-4bcc-9e02-00ea994bb138)
 
 
 ##  Источники
