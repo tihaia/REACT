@@ -1,65 +1,67 @@
 /* Контейнер для элементов управления */
 .controls {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  /* Поле ввода для поиска */
-  .controls input {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    width: 200px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .controls input:focus {
-    outline: none;
-    border-color: #8d6e63; /* Изменение цвета при фокусе */
-  }
-  
-  /* Кнопки и селекты */
-  .controls select,
-  .controls button {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: #f5ebe0;
-    color: #6d4c41;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  /* При наведении на кнопки и селекты */
-  .controls select:hover,
-  .controls button:hover {
-    background-color: #8d6e63;
-    color: white;
-    border-color: #8d6e63;
-  }
-  
-  /* Кнопка очистки фильтров */
-  .controls button {
-    background-color: #f5ebe0;
-    color: #6d4c41;
-    font-weight: bold;
-    border: none;
-  }
-  
-  .controls button:hover {
-    background-color: #8d6e63;
-    color: white;
-  }
-  
-  .controls select {
-    background-color: #f5ebe0;
-    width: 200px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 30px auto;
+  padding: 16px 24px;
+  background-color: #fff8f1;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+/* Поле ввода для поиска */
+.controls input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 220px;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+  background-color: #fff;
+  color: #4e342e;
+}
+
+.controls input:focus {
+  outline: none;
+  border-color: #8d6e63;
+  box-shadow: 0 0 0 3px rgba(141, 110, 99, 0.2);
+}
+
+/* Селекты и кнопки */
+.controls select,
+.controls button {
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f5ebe0;
+  color: #4e342e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controls select:hover,
+.controls button:hover {
+  background-color: #8d6e63;
+  color: white;
+  border-color: #8d6e63;
+}
+
+/* Селект отдельным блоком */
+.controls select {
+  width: 200px;
+}
+
+/* Кнопка "Очистить фильтры" */
+.controls button {
+  font-weight: 600;
+  border: none;
+}
+
   
   /* Респонсивность для маленьких экранов */
   @media (max-width: 768px) {
